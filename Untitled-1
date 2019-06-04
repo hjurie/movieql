@@ -1,0 +1,42 @@
+/users/1/ GET (profile info)
+/feed/
+/notifications/
+/users/1/
+
+
+
+{
+  feed {
+      comments
+      likeNumber
+  }
+  notifications {
+    isRead
+  }
+  user {
+    username
+    profilePic
+  }
+}
+
+
+{
+  feed: [
+    {
+      comment: 1,
+      likeNumber: 20
+    }
+  ],
+  notifications: [
+    {
+      isRead: true
+    },
+    {
+      isRead: false
+    }
+  ],
+  user: {
+    username: "hjurie"
+    profile: "http:"
+  }
+}

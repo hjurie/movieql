@@ -1,0 +1,31 @@
+
+type Coin {
+  base_currency: String!
+  quote_currency: String!
+  symbol_code: String!
+  display_name: String!
+  trade_open_at: Int!
+  state: String
+}
+
+type Query {
+  coins(quote: String): [Coin]!
+}
+
+
+
+# type Coin {
+#   id: Int!
+#   name: String!
+#   score: Int!
+# }
+
+# type Query{
+#   coins: [Coin]!
+#   coin(id: Int!): Coin
+# }
+
+# type Mutation {
+#   addCoin(name: String!, score: Int!): Coin!
+#   deleteCoin(id:Int!): Boolean!
+# }
